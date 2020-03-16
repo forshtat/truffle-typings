@@ -1,5 +1,5 @@
 {
-  "name": "truffle-typings",
+  "name": "@openeth/truffle-typings",
   "description": "Typescript typings for Truffle",
   "keywords": [
     "truffle",
@@ -8,14 +8,14 @@
     "ethereum",
     "smartcontract"
   ],
-  "version": "1.0.7",
+  "version": "0.0.1",
   "repository": "git@github.com:ethereum-ts/truffle-typings.git",
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "license": "MIT",
   "dependencies": {
     "@types/chai": "^4.1.4",
     "@types/mocha": "^5.2.5",
-    "@types/web3": "^1.0.18"
+    "@types/web3": "^1.2.2"
   },
   "types": "./index.d.ts"
 }
