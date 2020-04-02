@@ -4,8 +4,8 @@
 /// <reference types="chai" />
 /// <reference types="mocha" />
 
+import Web3 from 'web3'
 declare type BN = import("bn.js");
-declare type Web3 = typeof import("web3");
 
 declare const assert: Chai.AssertStatic;
 declare const expect: Chai.ExpectStatic;
