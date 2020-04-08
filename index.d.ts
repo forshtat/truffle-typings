@@ -7,6 +7,8 @@
 declare type BN = import("bn.js");
 declare type Web3 = import("web3").default;
 
+declare type provider = import("web3-core").provider
+
 declare const assert: Chai.AssertStatic;
 declare const expect: Chai.ExpectStatic;
 
@@ -66,7 +68,8 @@ declare namespace Truffle {
 
   interface Contract<T> extends ContractNew<any[]> {
     deployed(): Promise<T>;
-    at(address: string): T;
+    at(address: string): Promise<T>;
+    setProvider(provider: provider, accounts: any): void
     address: string;
     contractName: string;
   }
