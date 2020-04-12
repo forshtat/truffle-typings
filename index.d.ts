@@ -46,6 +46,11 @@ declare namespace Truffle {
     gas?: BN | number | string;
     gasPrice?: BN | number | string;
     value?: BN | string;
+    /* GSN-specific transaction details */
+    paymaster?: string
+    forwarder?: string
+    useGSN?: boolean
+    forceGasPrice?: string
   }
 
   export interface TransactionLog {
